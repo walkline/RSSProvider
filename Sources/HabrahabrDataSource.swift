@@ -9,7 +9,7 @@
 import Foundation
 import AEXML
 
-enum HabrahabrFeeds: String {
+public enum HabrahabrFeeds: String {
     case all = "https://habrahabr.ru/rss/all/"
     case interesting = "https://habrahabr.ru/rss/interesting/"
     
@@ -27,7 +27,7 @@ open class HabrahabrDataSource: DataSourceProtocol {
  	
     var feed: HabrahabrFeeds
     
-    init(feed: HabrahabrFeeds = .all) {
+    public init(feed: HabrahabrFeeds = .all) {
         self.feed = feed
     }
 }
